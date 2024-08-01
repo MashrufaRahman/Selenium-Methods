@@ -126,7 +126,7 @@ public class HomePageTest extends BaseClass {
 	public void newUserRegistrationPageValidationTest() {
 		homePages.getMethodOfThePage();
 	}
-
+// we are creating a branch, so brought changes
 
 
 	

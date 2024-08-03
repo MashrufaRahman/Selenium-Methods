@@ -127,7 +127,14 @@ public class HomePageTest extends BaseClass {
 		homePages.getMethodOfThePage();
 	}
 // we are creating a branch, so brought changes
-
+	@Test
+	public void use_of_getAttribute_method_Test () {
+		homePages.use_of_getAttribute_method();
+	}
+	@Test
+	public void use_of_clear_in_login_Test() {
+		homePages.use_of_clear_in_login();
+	}
 
 	
 	

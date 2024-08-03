@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="testns_Suite">
+<parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="pagesTest_7_26_2024.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- testNG_Suite -->

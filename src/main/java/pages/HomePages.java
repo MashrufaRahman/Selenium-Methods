@@ -250,6 +250,36 @@ public void why_we_use_cssSelector_as_locator_in_logo () {
 			verifyTitle(driver, "CMS Enterprise Portal - New User Registration");
 			verifyCurrentUrl(driver, "https://portal.cms.gov/portal/newuserregistration");
 		}
+		
+		// Here We used User ID field
+		// getAttribute() actually give the value of the Attribute, not common
+		// raw use, in next method we will use from common action
+		public void use_of_getAttribute_method () {
+			elementSelected(userId);
+			pause(3000);
+			String ml = userId.getAttribute("maxlength");
+			System.out.println("The value of the maxlength attribute is: " + ml);
+			String ph = userId.getAttribute("placeholder");
+			System.out.println("The value of the placeholder attribute is: " + ph);
+		}
+		// use of clear()
+		public void use_of_clear_in_login() {
+			//clearTextFromTheField(userId); // new here
+			pause(3000);
+			clearTextFromTheField(password); // new here
+			pause(3000);
+			inputText(userId, "enthrall_12");		
+			inputText(password, "OnthrallTest@1234");
+			pause(4000);
+			elementSelected(termsAndCondition);
+			clickEliment(termsAndCondition);
+			pause(4000);
+			elementEnable(loginButton); 
+			verifyTextOfTheWebElement(loginButton, "Login");
+			clickEliment(loginButton);
+			pause(4000);
+			
+		}
 
 public void verifyTextOfTheWebElement(WebElement newUserRegistration2, String string) {
 						
